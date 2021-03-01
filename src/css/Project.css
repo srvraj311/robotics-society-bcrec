@@ -1,0 +1,105 @@
+/* project section */
+.Projects {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.Projects h1 {
+  background-color: #ff8177;
+  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+.Projects__Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Projects__card {
+  /* background-image: url("images.jfif"); */
+  margin: 30px; /*to create space between two card row wise*/
+  height: 400px;
+  width: 300px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #5300da 0%, #fc00ff 100%);
+  transition: 0.3s ease-in;
+}
+.Projects__card a {
+  text-decoration: none;
+}
+
+.Projects__card:nth-child(1) {
+  background-color: #ff512f;
+  background-image: linear-gradient(to right, #5300da 0%, #fc00ff 100%);
+  background-size: 100%;
+}
+
+.Projects__card h2 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Projects__card p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.Projects__btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.Projects__card button {
+  margin-top: 50px;
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+
+.Projects__card button:hover {
+  cursor: pointer;
+  padding: 18px 28px;
+}
+
+.Projects__card:hover {
+  transform: scale(1.09);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+/* Mobile Version */
+@media screen and (max-width: 1300px) {
+  .Projects__Wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* small screen */
+@media screen and (max-width: 700px) {
+  .Projects__Wrapper {
+    grid-template-columns: 1fr;
+  }
+}

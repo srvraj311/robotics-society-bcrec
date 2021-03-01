@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav-options a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mobile-option {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+.option a {
+  color: white;
+}
+.option :hover {
+  color: rgb(248, 45, 255);
+  cursor: pointer;
+}
+.signin-up {
+  display: flex;
+  padding: 0px 10px;
+  list-style-type: none;
+}
+.sign-in {
+  padding-right: 50px;
+  align-self: center;
+}
+.signup-btn {
+  padding: 10px 10px;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: white;
+  cursor: pointer;
+  align-items: center;
+}
+
+/*Desktop View*/
+.header {
+  display: flex;
+  background: #111;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+}
+.logo-name {
+  background-color: #ff8177;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  padding-right: 20px;
+  width: 45px;
+  height: 45px;
+  fill: #fff;
+}
+.nav-options {
+  padding-left: 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 35px;
+  list-style-type: none;
+}
+.mobile-option {
+  display: none;
+}
+
+.signin-up {
+  display: flex;
+  padding: 0px 5px;
+  list-style-type: none;
+}
+.sign-in {
+  padding-right: 50px;
+  align-self: flex-end;
+}
+.sign-in :hover {
+  color: rgb(248, 45, 255);
+}
+.sign-in a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.menu-icon {
+  display: none;
+  width: 45px;
+  height: 45px;
+}
+.signup-btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 10px;
+  height: 2.4rem;
+  border-radius: 3px;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  /*Mobile View */
+  .header {
+    padding: 0px 10px;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+  .logo-name {
+    font-size: 1.3rem;
+  }
+  .nav-options {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options.active {
+    background: #111;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  .menu-icon {
+    display: inline;
+    fill: hsl(0, 0%, 100%);
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+    padding: 30px 0px;
+  }
+  .option:hover {
+    background-color: #833ab4;
+    cursor: pointer;
+  }
+  .sign-up {
+    text-align: center;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    border-radius: 3px;
+    color: white;
+    padding: 20px 0px;
+    width: 80%;
+    align-self: center;
+    border-radius: 3px;
+  }
+
+  .signin-up {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: block;
+}
